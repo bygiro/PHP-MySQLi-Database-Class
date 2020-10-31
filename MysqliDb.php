@@ -436,7 +436,7 @@ class MysqliDb
      *
      * @return MysqliDb Returns the current instance.
      */
-    protected function reset()
+    public function reset()
     {
         if ($this->traceEnabled) {
             $this->trace[] = array($this->_lastQuery, (microtime(true) - $this->traceStartQ), $this->_traceGetCaller());
